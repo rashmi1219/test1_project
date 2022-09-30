@@ -38,6 +38,16 @@ git status
 it will tell us about the the file which is modified and which one is untracked
 
 ```
+next is to commit the changes which will create version
+```
+git commit -m "message"
+```
+to see all the version available in git the command is
+```
+git log
+
+```
+
 
 
 ```
