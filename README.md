@@ -47,8 +47,55 @@ to see all the version available in git the command is
 git log
 
 ```
-
-
+to send changes /version to git command is
+```
+git push origin main
+```
+to check remote url
+```
+git remote -v
 
 ```
+to check the branch of project
+```
+git branch
+
+```
+To setup CI/CD pipeline we need three information here
+```
+1.heroku_emailid = shinning.prakash@gmail.com
+2.heroku_API_key = 78d95231-ef6d-4f22-870a-334fca41d151
+3.heroku_app_name = flaskapp0101  
+
+```
+BUILD DOCKER IMAGE
+```
+docker build -t <image_name>:<tag_name> .(comment: here . means location of docker file if it is located in same folder we write .)
+
+```
+note: image name for docker must be in lower case / tag name can be any thing you want
+
+To list docker image command will be
+```
+docker images
+
+```
+Run docker image
+```
+docker run -p 5000:5000 -e PORT=5000 <image id>
+here p means port number e means environment variable
+
+```
+to check running container in docker command is
+```
+docker ps
+
+```
+To stop docker container
+```
+docker stop <container_id>
+
+```
+
+
 
