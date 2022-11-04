@@ -1,12 +1,11 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 from typing import List
 
 #Declaring variables for setup function
 PROJECT_NAME="housing-predictor"
-VERSION = "0.0.1"
+VERSION = "0.0.3"
 AUTHOR = "Rashmi"
 DESCRIPTION = "This is first machine-learning project"
-PACKAGES = ["housing"]
 REQUIREMENT_FILE_NAME = "requirements.txt"
 
 
@@ -19,7 +18,7 @@ def get_requirements_list()->List[str]:
     """
     
     with open(REQUIREMENT_FILE_NAME) as requirement_file:
-        return requirement_file.readlines()
+        return requirement_file.readlines().remove("-e .")
 
 
 
@@ -28,7 +27,7 @@ name=PROJECT_NAME,
 version=VERSION,
 author=AUTHOR,
 description=DESCRIPTION,
-packages=PACKAGES,
+packages=find_packages(),
 install_requires=get_requirements_list()
 
 )
