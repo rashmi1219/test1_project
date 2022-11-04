@@ -96,6 +96,10 @@ To stop docker container
 docker stop <container_id>
 
 ```
-
+Machine learning project
+'''
+here housing is the root folder where all the files and folders for the project resides
+setup.py file is same as pip install -r requirements .txt
+we do it by  "python setup.py install"
 
 
