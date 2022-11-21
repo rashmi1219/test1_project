@@ -15,4 +15,4 @@ def index():
         logging.info("we are testing logging module")
     return "my first ml project"
 if __name__ == "__main__":
-    app.run()
+    app.run(debug = True)
