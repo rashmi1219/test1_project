@@ -108,5 +108,9 @@ we do it by  "python setup.py install"
 so in requirements.txt file we mention -e . which will install internal packages.
 
 ```
+install ipykernel
+```
+pip install ipykernel
 
+```
 
