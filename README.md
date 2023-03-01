@@ -113,4 +113,9 @@ install ipykernel
 pip install ipykernel
 
 ```
+```
+any helper function we will write in util file like how to make pickle object
+or how to load a model from pickle object
+```
+
 
